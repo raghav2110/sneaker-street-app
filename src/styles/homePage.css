@@ -1,0 +1,50 @@
+.cover-image{
+    margin: 0.5rem 1rem;
+}
+
+.home-wrapper{
+    margin: 0 1rem;
+}
+
+.new-arrival{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 1rem;
+    margin: 1rem 1rem;
+}
+
+.product-detail{
+    margin: 0.5rem;
+    text-align: left;
+}
+
+.brand-name{
+    color: #444;
+    font-size: 1rem;
+    font-weight: 100;
+}
+.product-name{
+    color: #333;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.home-heading{
+    margin: 1rem;
+    text-align: left;
+    font-size: 2rem;
+    word-spacing: 2px;
+    color: var(--headerbg);
+}
+
+.home-category{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 1rem;
+    margin: 1rem;
+}
+
+.grid-category {
+    justify-self: center;
+    text-align: center;
+}
