@@ -1,14 +1,12 @@
-//  import { Link } from "react-router-dom";
-
-
+import "../styles/footer.css";
 
 export function Footer(){
     return(
         <div>
             <footer className="landing-footer">
                 <nav className="nav nav-dark">
-                    <h4 style={{color: "whitesmoke"}}>Made With 💙 By Raghav</h4>
-                    <ul className="nav-list" style={{display: "flex"}}>
+                    <h4>Made With 💙 By Raghav</h4>
+                    <ul className="nav-list footer">
                         <li> <a href="https://github.com/raghav2110" target="_blank">
                                 <i className="fa fa-github fa-lg" aria-hidden="true"></i></a> </li>
 

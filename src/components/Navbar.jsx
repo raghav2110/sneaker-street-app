@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
+
 export function Navbar(){
     return(
         <header className="header-main">
-        <nav className="nav nav-dark" style={{position: "relative"}}>
-            <a href="/index.html">
+        <nav className="nav nav-dark header">
+            <Link to="/">
                 <h3>SNEAKER STREET</h3>
-            </a>
+            </Link>
             <button className="hamburger">
                 <i className="fa fa-bars fa-2x" aria-hidden="true"></i>
             </button>
@@ -13,23 +15,23 @@ export function Navbar(){
             </div>
             <ul className="nav-list">
                 <li>
-                    <a href="/pages/loginPage.html">
+                    <Link to="/Login">
                         <button className="btn btn-secondary">Login</button>
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="/pages/wishList.html">
+                    <Link to="/Wishlist">
                         <button className="btn btn-icon">
                             <i className="fa fa-heart fa-lg" aria-hidden="true"></i>
                         </button>
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="/pages/cartList.html">
+                    <Link to="/Cart">
                         <button className="btn btn-icon">
                             <i className="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
                         </button>
-                    </a>
+                    </Link>
                 </li>
             </ul>
         </nav>
