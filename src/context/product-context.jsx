@@ -18,11 +18,9 @@ const ProductProvider = ({ children }) => {
         (async () => {
           try {
             const res = await axios.get("/api/categories");
-            console.log(res.data.categories)
             setCategories(res.data.categories);
             const res1 = await axios.get("/api/products");
             setProducts(res1.data.products);
-            console.log(res1.data.products)
           } catch (error) {
             console.log(error);
           }
@@ -36,7 +34,6 @@ const ProductProvider = ({ children }) => {
         categoryName
     )(state, products);
 
-    console.log(categories,products,finalProductList)
     return (
         <ProductContext.Provider value={{ categories, finalProductList, state, dispatch }}>
           {children}
