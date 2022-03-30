@@ -1,5 +1,17 @@
+import React from "react";
+import { Filters, Navbar, Footer } from "../../components/index";
+import "../../styles/productList.css";
+import { ProductList } from "./ProductList";
+
 export function Products(){
     return(
-        <h2>Product Page</h2>
-    )
+        <>
+        <Navbar />
+        <div className="content-wrapper">
+            <Filters/>
+            <ProductList/>
+        </div>
+        <Footer />
+        </>
+    );
 }
