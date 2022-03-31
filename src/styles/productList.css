@@ -108,6 +108,10 @@ input[type=radio],input[type=checkbox].filter-input{
     border-radius: 0.5rem;
 }
 
+.fill{
+    color: red;
+}
+
 @media screen and (max-width: 768px) {
     .content-wrapper{
         flex-direction: column;

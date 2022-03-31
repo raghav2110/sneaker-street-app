@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import "../styles/header.css";
+import { useAuth } from "../context/auth-context";
 
 export function Navbar(){
+    const { state, dispatch } = useAuth();
     return(
         <header className="header-main">
         <nav className="nav nav-dark header">
@@ -21,16 +24,23 @@ export function Navbar(){
                 </li>
                 <li>
                     <Link to="/Wishlist">
-                        <button className="btn btn-icon">
-                            <i className="fa fa-heart fa-lg" aria-hidden="true"></i>
-                        </button>
+                        <div className="navbar-icon">
+                            <button className="btn-icons">
+                                <i className="fa fa-heart fa-lg" aria-hidden="true"></i>
+                            </button>
+                            <span class="badge badge-icon">{state["wishList"].length}</span>
+                        </div>
+                        
                     </Link>
                 </li>
                 <li>
                     <Link to="/Cart">
-                        <button className="btn btn-icon">
-                            <i className="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
-                        </button>
+                        <div className="navbar-icon">
+                            <button className="btn btn-icon">
+                                <i className="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
+                            </button>
+                            <span class="badge badge-icon">0</span>
+                        </div>
                     </Link>
                 </li>
             </ul>

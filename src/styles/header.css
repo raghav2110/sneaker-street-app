@@ -1,3 +1,36 @@
 .header{
     position: relative;
 }
+
+.navbar-icon{
+    position: relative;
+}
+
+.badge-icon{
+    background-color: rgb(181, 181, 245);
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: absolute;
+    padding: 0.1rem 0.35rem;
+    box-sizing: border-box;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+    left: 2rem;
+    bottom: 1.8rem;
+    color: black;
+}
+
+.btn-icons{
+    width: max-content; 
+    letter-spacing: 1px;
+    background-color: var(--headerbg);
+    padding: 0.8rem 0.8rem;
+    font-size: 0.8rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    font-weight: bold;
+    border: 2px solid;
+    padding: auto;
+    color: whitesmoke;
+}

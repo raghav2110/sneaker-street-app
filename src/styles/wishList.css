@@ -1,0 +1,44 @@
+.main-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-wrapper h1{
+    margin: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.wishlist-wrapper{
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.card-comp{
+    width: auto;
+}
+
+.footer-card{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.btn-addToCart{
+    margin: 0.625rem;
+    background-color: #FFA500;
+    padding: 0.5rem 1rem;
+    font-weight: 800;
+    color: white;
+    border: transparent;
+    border-radius: 0.5rem;
+}
+
+.card-dismiss i{
+    color: #FF0000;
+}
