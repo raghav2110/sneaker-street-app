@@ -19,6 +19,8 @@ export const products = [
     avalQty: 10,
     brand: "Nike",
     categoryName: "men",
+    inCart: false,
+    inWishlist: false,
   },
   {
     _id: uuid(),
@@ -33,6 +35,8 @@ export const products = [
     avalQty: 15,
     brand: "Asics",
     categoryName: "men",
+    inCart: false,
+    inWishlist: false,
   },
   {
     _id: uuid(),
@@ -47,6 +51,8 @@ export const products = [
     avalQty: 15,
     brand: "Reebok",
     categoryName: "women",
+    inCart: false,
+    inWishlist: false,
   },
   {
     _id: uuid(),
@@ -61,6 +67,8 @@ export const products = [
     avalQty: 7,
     brand: "Nike",
     categoryName: "men",
+    inCart: false,
+    inWishlist: false,
   },
   {
     _id: uuid(),
@@ -75,6 +83,8 @@ export const products = [
     avalQty: 5,
     brand: "Nike",
     categoryName: "women",
+    inCart: false,
+    inWishlist: false,
   },
   {
     _id: uuid(),
@@ -89,6 +99,8 @@ export const products = [
     avalQty: 5,
     brand: "Nike",
     categoryName: "women",
+    inCart: false,
+    inWishlist: false,
   },
   {
     _id: uuid(),
@@ -103,6 +115,8 @@ export const products = [
     avalQty: 5,
     brand: "Nike",
     categoryName: "women",
+    inCart: false,
+    inWishlist: false,
   },
   {
     _id: uuid(),
@@ -117,6 +131,8 @@ export const products = [
     avalQty: 5,
     brand: "Adidas Originals",
     categoryName: "women",
+    inCart: false,
+    inWishlist: false,
   },
   {
     _id: uuid(),
@@ -131,6 +147,8 @@ export const products = [
     avalQty: 5,
     brand: "Asics",
     categoryName: "men",
+    inCart: false,
+    inWishlist: false,
   },
   {
     _id: uuid(),
@@ -145,5 +163,7 @@ export const products = [
     avalQty: 5,
     brand: "Adidas Original",
     categoryName: "men",
+    inCart: false,
+    inWishlist: false,
   },
 ];

@@ -1,9 +1,11 @@
 import "../../styles/productList.css";
 import { useProducts } from "../../context/product-context";
+import { useAuth } from "../../context/auth-context";
 
 
 export function ProductList(){
     const  { finalProductList }  = useProducts();
+    const { state, dispatch } = useAuth();
     return(
        
         <div className="product-wrapper">
@@ -29,7 +31,13 @@ export function ProductList(){
                                     <button className="btn-addToCart">Add To Cart</button>
                                 </div>
                                 <div className="icons-comp">
-                                    <i className="fa fa-heart icon"></i>
+                                    {state["wishList"].some((item)=>item._id === product._id)?(
+                                    <i onClick={()=>{
+                                        dispatch({ type: "remove_from_wishlist", payload: product })
+                                    }} className="fa fa-heart icon fill"></i>) :
+                                    (<i onClick={()=>{
+                                        dispatch({ type: "add_to_wishlist", payload: product })
+                                    }} className="fa fa-heart icon"></i>)}
                                 </div>
                             </div>
                         </div>
@@ -37,27 +45,27 @@ export function ProductList(){
                 else{
                     return(
                         <a href="#">
-                            <div class="card-comp">
-                                <img class="img-comp over-img" src={product.image} alt="Shoe Image"/>
-                                <div class="text-comp">
-                                    <div class="header img-overlay">Out Of Stock</div>
-                                    <div class="header-comp over-img">
-                                        <div class="header">{product.brand}</div>
-                                        <div class="sub-header">₹ {product.originalPrice}</div>
+                            <div className="card-comp">
+                                <img className="img-comp over-img" src={product.image} alt="Shoe Image"/>
+                                <div className="text-comp">
+                                    <div className="header img-overlay">Out Of Stock</div>
+                                    <div className="header-comp over-img">
+                                        <div className="header">{product.brand}</div>
+                                        <div className="sub-header">₹ {product.originalPrice}</div>
                                     </div>
-                                    <div class="detail-comp over-img">{product.name}</div>
+                                    <div className="detail-comp over-img">{product.name}</div>
                                 </div>
-                                <div class="footer-card">
-                                    <div class="name-comp-card">
-                                        <button class="btn-addToCart">Add To Cart</button>
+                                <div className="footer-card">
+                                    <div className="name-comp-card">
+                                        <button className="btn-addToCart">Add To Cart</button>
                                     </div>
-                                    <div class="icons-comp">
-                                        <i class="fa fa-heart icon"></i>
+                                    <div className="icons-comp">
+                                        <i className="fa fa-heart icon"></i>
                                     </div>
                                 </div>
                             </div>
                         </a>)  
-                }
+                    }
             })}
         </div>
         
