@@ -12,7 +12,7 @@ export function SignUp(){
                     <form className="form-area">
                         <div>
                             <label for="Name" className="email-label">Name</label>
-                            <input type="text" id="Name" placeholder="Enter Your Name" className="email-input-field" />
+                            <input type="" id="Name" placeholder="Enter Your Name" className="email-input-field" />
                         </div>
                         <div>
                             <label for="Email" className="email-label">Email</label>
