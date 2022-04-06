@@ -1,7 +1,6 @@
 import React from "react";
 
 export function PriceSummary({ products }){
-    console.log(products)
     const priceSummary = products.reduce((summary,item)=>(
         {...summary, 
             orgPrice: Number(summary.orgPrice)+ (Number(item.originalPrice)* Number(item.qty)),
