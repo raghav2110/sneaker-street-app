@@ -48,14 +48,6 @@
     margin: 0.5rem 0;
 }
 
-input[type=text]input[type=password].name-input{
-    border: 0.2rem solid var(--borderColor);
-    border-radius: 0.3rem;
-    font-size: 0.85rem;
-    color: var(--headerbg);
-    width: 100%;
-    padding: 0.5rem
-}
 
 .email-input-field{
     border: 0.2rem solid var(--borderColor);
