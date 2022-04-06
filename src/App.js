@@ -5,6 +5,7 @@ import { Products } from "./pages/Products/ProductPage";
 import { Login } from "./pages/Login/LoginPage";
 import { Wishlist } from "./pages/Wishlist/WishlistPage";
 import { Cart } from "./pages/Cart/CartPage";
+import { SignUp } from "./pages/SignUp/signupPage";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/login" element={<Login/>}></Route>
         <Route path="/wishlist" element={<Wishlist/>}></Route>
         <Route path="/cart" element={<Cart/>}></Route>
+        <Route path="/signup" element={<SignUp/>}></Route>
       </Routes>
     </div>
   );

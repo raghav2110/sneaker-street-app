@@ -1,0 +1,116 @@
+.main-wrapper-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 4rem;
+}
+
+.pos-relative{
+    position: relative;
+}
+
+.login-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 25rem;
+    height: fit-content;
+    padding: 1rem 0;
+}
+
+.login-text{
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    font-weight: bold;
+    color: var(--headerbg);
+}
+
+.input-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.form-area{
+    width: 100%;
+    padding: 0 1.5rem;
+    text-align: left;
+}
+
+.email-label{
+    display: block;
+    font-size: 1rem;
+    color: var(--headerbg);
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.email-input-field{
+    border: 0.2rem solid var(--borderColor);
+    border-radius: 0.3rem;
+    font-size: 0.85rem;
+    color: var(--headerbg);
+    width: 100%;
+    padding: 0.5rem
+}
+
+.password-wrapper{
+    position: relative;
+    margin: 0.75rem 0;
+}
+
+.toggle-icon{
+    position: absolute;
+    cursor: pointer;
+    margin: 2rem 0;
+    padding: 0.5rem;
+    top: 0;
+    right: 0;
+}
+
+.button-wrapper{
+    position: relative;
+    height: 3.125rem;
+    margin: 1.5rem 11rem;
+}
+
+.remember-forget-area{
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remember-label{
+    padding-left: 0.4rem;
+    display: block;
+    font-size: 1rem;
+    color: var(--headerbg);
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+.btn-login{
+    position: absolute;
+    font-size: 1rem;
+    margin:  0.5rem 2.5rem;
+    padding: 0.75rem 2rem;
+}
+
+.btn-sign-up{
+    background: transparent;
+    border: transparent;
+    font-size: 1rem;
+    color: var(--headerbg);
+    font-weight: bolder;
+    padding: 0;
+
+}
