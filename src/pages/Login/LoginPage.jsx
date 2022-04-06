@@ -1,39 +1,44 @@
 import "../../styles/loginPage.css"
 import { Navbar } from "../../components";
+import { Link } from "react-router-dom";
 
 export function Login(){
     return(
         <>
             <Navbar/>
-            <div class="main-wrapper">
-                <div class="login-wrapper">
-                    <div class="login-text">Login</div>
-                    <div class="input-area">
-                        <form class="form-area">
+            <div className="main-wrapper">
+                <div className="login-wrapper">
+                    <div className="login-text">Login</div>
+                    <div className="input-area">
+                        <form className="form-area">
                             <div>
-                                <label for="Email" class="email-label">Email</label>
-                                <input type="email" id="Email" placeholder="youremail@gmail.com" class="email-input" />
+                                <label for="Email" className="email-label">Email</label>
+                                <input type="email" id="Email" placeholder="youremail@gmail.com" className="email-input" />
                             </div>
-                            <div class="password-wrapper">
-                                <label for="Password" class="email-label">Password</label>
-                                <input type="password" id="Password" placeholder="Your Password" class="email-input" />
-                                <div class="toggle-icon">
-                                    <span><i class="fa fa-eye-slash fa-lg"></i></span>
+                            <div className="password-wrapper">
+                                <label for="Password" className="email-label">Password</label>
+                                <input type="password" id="Password" placeholder="Your Password" className="email-input" />
+                                <div className="toggle-icon">
+                                    <span><i className="fa fa-eye-slash fa-lg"></i></span>
                                 </div>
                             </div>
-                            <div class="remember-forget-area">
-                                <div class="remember-area">
+                            <div className="remember-forget-area">
+                                <div className="remember-area">
                                     <input type="checkbox" />
-                                    <label for="Password" class="remember-label">Remember Me</label>
+                                    <label for="Password" className="remember-label">Remember Me</label>
                                 </div>
-                                <label for="Password" class="email-label">Forget Password?</label>
+                                <label for="Password" className="email-label">Forget Password?</label>
                             </div>
-                            <div class="button-wrapper">
-                                <button type="submit" class="btn btn-primary btn-login">Login</button>
+                            <div className="button-wrapper">
+                                <button type="submit" className="btn btn-primary btn-login">Login</button>
                             </div>
                         </form>
                     </div>
-                    <p>Don't Have An Account ? <a href="/pages/signupPage.html"><button class="btn btn-sign-up">Sign Up</button></a>.</p>
+                    <p>Don't Have An Account ? <a href="/pages/signupPage.html">
+                        <Link to="/SignUp">
+                            <button className="btn btn-sign-up">Sign Up</button>
+                        </Link>
+                    </a>.</p>
                 </div>
             </div>
     </>
