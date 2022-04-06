@@ -31,7 +31,17 @@
 
 .btn-addToCart{
     margin: 0.625rem;
-    background-color: #FFA500;
+    background-color: #F7CA00;
+    padding: 0.5rem 1rem;
+    font-weight: 800;
+    color: white;
+    border: transparent;
+    border-radius: 0.5rem;
+}
+
+.btn-goToCart{
+    margin: 0.625rem;
+    background-color: #FA8900;
     padding: 0.5rem 1rem;
     font-weight: 800;
     color: white;

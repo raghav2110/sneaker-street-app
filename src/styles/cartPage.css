@@ -1,0 +1,135 @@
+.main-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-wrapper{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 0 2rem;
+    grid-column-gap: 1rem;
+}
+
+.cart-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.cart-content{
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.card-comp{
+    width: auto;
+}
+
+.footer-card{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.btn-addToCart{
+    margin: 0.625rem;
+    background-color: #FFA500;
+    padding: 0.5rem 1rem;
+    font-weight: 800;
+    color: white;
+    border: transparent;
+    border-radius: 0.5rem;
+}
+
+.card-dismiss i{
+    color: #FF0000;
+}
+
+.order-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.order-summary-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid var(--headerbg);
+    height: 16.45rem;
+    padding: 1rem;
+    color: #6b7280;
+}
+
+.mrp-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discount-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 2rem;
+}
+
+.total-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 1000;
+}
+
+.width-100{
+    width: 100%;
+}
+
+.count-comp{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"].product-quantity-count{
+    width: 20%;
+    text-align: center;
+}
+
+.product-quantity-count{
+    width: 3rem;
+    height: 2rem;
+    padding: 0.5rem;
+}
+
+.decrease-product-quantity{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    white-space: nowrap;
+}
+@media screen and (max-width:768px) {
+    .cart-wrapper{
+        margin: 0.4rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 1rem;
+    }
+
+    .detail-primary{
+        min-height: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

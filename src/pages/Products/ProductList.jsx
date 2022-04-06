@@ -1,6 +1,7 @@
 import "../../styles/productList.css";
 import { useProducts } from "../../context/product-context";
 import { useAuth } from "../../context/auth-context";
+import { Link } from "react-router-dom";
 
 
 export function ProductList(){
@@ -28,7 +29,12 @@ export function ProductList(){
                             </div>
                             <div className="footer-card">
                                 <div className="name-comp-card">
-                                    <button className="btn-addToCart">Add To Cart</button>
+                                    {state["cart"].some((item)=>item._id === product._id)?(
+                                        <Link to="/cart" onClick={()=> dispatch({type:"clear_wishlist",payload:product})} >
+                                            <button className="btn-goToCart">Go To Cart</button>
+                                        </Link>
+                                    ):(<button onClick={()=> dispatch({type:"add_to_cart",payload:product})} className="btn-addToCart">Add To Cart</button>)}
+                                    
                                 </div>
                                 <div className="icons-comp">
                                     {state["wishList"].some((item)=>item._id === product._id)?(
