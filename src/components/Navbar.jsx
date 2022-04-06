@@ -28,7 +28,7 @@ export function Navbar(){
                             <button className="btn-icons">
                                 <i className="fa fa-heart fa-lg" aria-hidden="true"></i>
                             </button>
-                            <span class="badge badge-icon">{state["wishList"].length}</span>
+                            <span className="badge badge-icon">{state["wishList"].length}</span>
                         </div>
                         
                     </Link>
@@ -39,7 +39,7 @@ export function Navbar(){
                             <button className="btn btn-icon">
                                 <i className="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
                             </button>
-                            <span class="badge badge-icon">0</span>
+                            <span className="badge badge-icon">{state["cart"].length}</span>
                         </div>
                     </Link>
                 </li>
