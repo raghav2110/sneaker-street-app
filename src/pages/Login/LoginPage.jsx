@@ -6,7 +6,7 @@ export function Login(){
     return(
         <>
             <Navbar/>
-            <div className="main-wrapper">
+            <div className="main-wrapper-login">
                 <div className="login-wrapper">
                     <div className="login-text">Login</div>
                     <div className="input-area">

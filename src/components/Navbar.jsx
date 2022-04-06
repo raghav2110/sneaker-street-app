@@ -25,7 +25,7 @@ export function Navbar(){
                 <li>
                     <Link to="/Wishlist">
                         <div className="navbar-icon">
-                            <button className="btn-icons">
+                            <button className="btn btn-icon">
                                 <i className="fa fa-heart fa-lg" aria-hidden="true"></i>
                             </button>
                             <span className="badge badge-icon">{state["wishList"].length}</span>
