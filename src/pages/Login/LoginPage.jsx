@@ -13,11 +13,11 @@ export function Login(){
                         <form className="form-area">
                             <div>
                                 <label for="Email" className="email-label">Email</label>
-                                <input type="email" id="Email" placeholder="youremail@gmail.com" class="email-input-field" />
+                                <input type="email" id="Email" placeholder="youremail@gmail.com" className="email-input-field" />
                             </div>
                             <div className="password-wrapper">
                                 <label for="Password" className="email-label">Password</label>
-                                <input type="password" id="Password" placeholder="Your Password" class="email-input-field" />
+                                <input type="password" id="Password" placeholder="Your Password" className="email-input-field" />
                                 <div className="toggle-icon">
                                     <span><i className="fa fa-eye-slash fa-lg"></i></span>
                                 </div>
